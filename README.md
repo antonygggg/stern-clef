@@ -53,7 +53,7 @@ stern_clef.sh backend -s 5m --template='{{.Message}} ({{.Namespace}}/{{.PodName}
 
 <br/><br/>
 
-Use Serilog to write structured compact log event format logs
+Use Serilog to write structured logs compact log event format
 
 https://github.com/serilog/serilog-formatting-compact#getting-started
 
