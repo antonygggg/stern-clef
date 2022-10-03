@@ -41,7 +41,7 @@ stern_clef.sh pod-query [flags_without_tempalte] --template='<TEMPLATE>'
 
 <br/>
 
-example
+examples
 
 ```
 stern_clef.sh backend --template=''
