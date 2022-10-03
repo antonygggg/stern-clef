@@ -13,7 +13,7 @@ Tail Kubernetes logs from multiple pods in [CLEF](https://clef-json.org) json fo
 #### In order to use this you need to have [Stern](https://github.com/stern/stern) installed globally (build and tested with [Stern 1.22.0](https://github.com/stern/stern/releases/tag/v1.22.0))
 
 ```
-stern_clef.sh pod-query [flags_without_tempalte]
+stern_clef.sh pod-query [flags_without_template]
 ```
 
 <br/>
