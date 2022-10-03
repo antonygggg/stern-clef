@@ -35,7 +35,7 @@ stern_clef.sh backend-859348d699 -s 5m
 
 
 ```
-stern_clef.sh pod-query [flags_without_tempalte] --template='<TEMPLATE>'
+stern_clef.sh pod-query [flags_without_template] --template='<TEMPLATE>'
 ```
 
 
