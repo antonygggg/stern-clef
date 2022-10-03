@@ -52,22 +52,18 @@ stern_clef.sh backend -s 5m --template='{{.Message}} ({{.Namespace}}/{{.PodName}
 <br/><br/>
 
 Use Serilog to write structured compact log event format logs
-
 https://github.com/serilog/serilog-formatting-compact#getting-started
 
 Stern go templates examples
-
 https://github.com/wercker/stern#examples
 
 ANSI escape sequences and color codes
-
 https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797#8-16-colors
 
 <br/>
+
 ### Read more:
 
 https://clef-json.org/
-
 https://github.com/stern/stern
-
 https://github.com/serilog
