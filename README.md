@@ -7,7 +7,7 @@ Tail Kubernetes logs from multiple pods in [CLEF](https://clef-json.org) json fo
 <br/>
 
 For example this log (using Serilog)
-```cs
+```csharp
 Log.Logger.Information("Service started at {nowUtc}", DateTime.UtcNow);
 ```
 
