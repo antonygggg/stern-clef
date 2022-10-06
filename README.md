@@ -4,6 +4,8 @@
 
 Tail Kubernetes logs from multiple pods in [CLEF](https://clef-json.org) json format
 
+<br/>
+
 For example this log (using Serilog)
 ```cs
 Log.Logger.Information("Service started at {nowUtc}", DateTime.UtcNow);
@@ -11,12 +13,7 @@ Log.Logger.Information("Service started at {nowUtc}", DateTime.UtcNow);
 
 Will produce this log entry
 ```json
-{
-    "@t": "2022-10-06T09:37:52.7066801Z",
-    "@m": "Service started at 10/06/2022 09:37:52",
-    "@i": "c16672c4",
-    "nowUtc": "2022-10-06T09:37:52.6986562Z"
-}
+{"@t":"2022-10-06T09:37:52.7066801Z","@m":"Service started at 10/06/2022 09:37:52","@i":"c16672c4","nowUtc":"2022-10-06T09:37:52.6986562Z"}
 ```
 <br/>
 
