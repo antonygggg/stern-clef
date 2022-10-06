@@ -22,7 +22,7 @@ Will produce this log entry
 
 #### In order to use this you need to have [Stern](https://github.com/stern/stern) installed globally (build and tested with [Stern 1.22.0](https://github.com/stern/stern/releases/tag/v1.22.0))
 
-```sh
+```bash
 stern_clef.sh pod-query [flags_without_template]
 ```
 
@@ -34,7 +34,7 @@ examples
 stern_clef.sh backend
 ```
 
-```sh
+```console
 stern_clef.sh backend-859348d699 -s 5m
 ```
 
@@ -44,7 +44,7 @@ stern_clef.sh backend-859348d699 -s 5m
 
 
 
-```sh
+```zsh
 stern_clef.sh pod-query [flags_without_template] --template='<TEMPLATE>'
 ```
 
