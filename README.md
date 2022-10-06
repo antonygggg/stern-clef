@@ -4,7 +4,20 @@
 
 Tail Kubernetes logs from multiple pods in [CLEF](https://clef-json.org) json format
 
+For example this log (using Serilog)
+```cs
+Log.Logger.Information("Service started at {nowUtc}", DateTime.UtcNow);
+```
 
+Will produce this log entry
+```json
+{
+    "@t": "2022-10-06T09:37:52.7066801Z",
+    "@m": "Service started at 10/06/2022 09:37:52",
+    "@i": "c16672c4",
+    "nowUtc": "2022-10-06T09:37:52.6986562Z"
+}
+```
 <br/>
 
 ### Usage:
@@ -12,7 +25,7 @@ Tail Kubernetes logs from multiple pods in [CLEF](https://clef-json.org) json fo
 
 #### In order to use this you need to have [Stern](https://github.com/stern/stern) installed globally (build and tested with [Stern 1.22.0](https://github.com/stern/stern/releases/tag/v1.22.0))
 
-```bash
+```sh
 stern_clef.sh pod-query [flags_without_template]
 ```
 
@@ -24,7 +37,7 @@ examples
 stern_clef.sh backend
 ```
 
-```console
+```sh
 stern_clef.sh backend-859348d699 -s 5m
 ```
 
@@ -34,7 +47,7 @@ stern_clef.sh backend-859348d699 -s 5m
 
 
 
-```
+```sh
 stern_clef.sh pod-query [flags_without_template] --template='<TEMPLATE>'
 ```
 
@@ -43,11 +56,11 @@ stern_clef.sh pod-query [flags_without_template] --template='<TEMPLATE>'
 
 examples
 
-```
+```sh
 stern_clef.sh backend --template=''
 ```
 
-```
+```sh
 stern_clef.sh backend -s 5m --template='{{.Message}} ({{.Namespace}}/{{.PodName}}/{{.ContainerName}})'
 ```
 
